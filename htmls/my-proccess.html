@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的流程</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<!--<link rel="stylesheet" href="../css/mui.css">-->
+<style type="text/css">
+	html{
+		font-size: 62.5%;
+	}
+	body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,
+	q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,
+	tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,section,summary,time,mark,audio,video
+	{
+		margin:0;
+		padding:0;
+	}
+	a{
+		text-decoration: none;
+	}
+	.tab{
+		width: 100%;
+		display: flex;
+		border-bottom: 0.1rem solid #0e8fea;
+		height: 4.4rem;
+		line-height: 4.4rem;
+	}
+	.tab a{
+		color: #777777;
+		flex: 1;
+		display: block;
+		text-align: center;
+		font-size: 1.4rem;
+		font-weight: bold;
+	}
+	.tab .active{
+		color: #0e8fea;
+		border-bottom: 0.2rem solid #0e8fea;
+	}
+	.lists{
+		list-style: none;
+	}
+	.lists li{
+		border-bottom: 0.1rem solid #ddd;
+		padding: 1.2rem;
+
+		display: -moz-box;  /* Firefox */
+		display: -ms-flexbox;    /* IE10 */
+		display: -webkit-box;    /* Safari */
+		display: -webkit-flex;    /* Chrome, WebKit */
+		display: flex;
+	}
+	.lists li .item-detail{
+		height: 8rem;
+		flex: 1;
+		margin-left: 1rem;
+		font-size: 1.6rem;
+		position: relative;
+	}
+	.u-photo{
+		height: 8rem;
+		width: 8rem;
+		border-radius: 2rem;
+	}
+	.apply-type{
+		font-weight: bold;
+		color: #393939;
+	}
+	.c-grey{
+		color: #c7c7c7;
+	}
+	.f-r{
+		float:right;
+	}
+	.clearfix{
+		clear: both;
+	}
+	.item-detail p{
+		width: 100%;
+	}
+	.item-p1{
+		margin-top: 1rem;
+	}
+	.item-p2{
+		position: absolute;
+		bottom: 1rem;
+	}
+
+</style>
+<body>
+<div class="tab">
+	<a href="#" class="item active">待审批</a>
+	<a href="#">已审批</a>
+	<a href="#">我的申请</a>
+</div>
+<div class="content">
+	<ul class="lists">
+		<li>
+			<img class="u-photo" src="http://oa3.tdxueyuan.com//Files/Api/Other/huangzufu/20151218112459.jpg">
+			<div class="item-detail c-grey">
+				<p class="item-p1">
+					<span class="apply-type">补卡</span>
+					<span class="f-r ">05-31 10:22</span>
+				</p>
+				<p class="item-p2 ">
+					<span>(05-31 上班)</span>
+					<span class="f-r ">处理人:罗国锋</span>
+				</p>
+			</div>
+
+		</li>
+
+		<li>
+			<img class="u-photo" src="http://oa3.tdxueyuan.com//Files/Api/Other/huangzufu/20151218112459.jpg">
+			<div class="item-detail c-grey">
+				<p class="item-p1">
+					<span class="apply-type">请假</span>
+					<span class="f-r ">05-31 10:22</span>
+				</p>
+				<p class="item-p2 ">
+					<span>05-28 09:00~05-28 18:00</span>
+					<span class="f-r ">被退回</span>
+				</p>
+			</div>
+		</li>
+
+		<li>
+			<img class="u-photo" src="http://oa3.tdxueyuan.com//Files/Api/Other/huangzufu/20151218112459.jpg">
+			<div class="item-detail c-grey">
+				<p class="item-p1">
+					<span class="apply-type">请假</span>
+					<span class="f-r ">05-31 10:22</span>
+				</p>
+				<p class="item-p2 ">
+					<span>05-28 09:00~05-28 18:00</span>
+					<span class="f-r ">已结束</span>
+				</p>
+			</div>
+		</li>
+
+	</ul>
+</div>
+</body>
+<!--<script src="../js/mui.js"></script>
+<script src="../js/mui.pullToRefresh.js"></script>
+<script src="../js/mui.pullToRefresh.material.js"></script>
+<script type="text/javascript">
+	mui.init();
+</script>-->
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/dropload.js"></script>
+<script type="text/javascript">
+	$(function($){
+		/*$('')*/
+	});
+</script>
+</html>
