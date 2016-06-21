@@ -43,6 +43,40 @@
 	}
 	console.log(getByte("你好吖,yy"));
 
+	//编写可以维护的javascript  书的部分提取
+
+	//校验引用对象是否数组兼容性写法
+	function isArray(value){
+		if(typeof Array.isArray==="function"){
+			return Array.isArray(value);
+		}else{
+			//兼容旧版本浏览器
+			return Object.prototype.toString.call(value)==="[object Array]";
+		}
+	}
+
+	var t="",
+		t2=["aa","bb"];
+	console.log('This is test array is right?');
+	console.log(isArray(t));
+	console.log(isArray(t2));
+
+	//校验属性是否在对象中存在
+	function checkPropertyIn(propertyName,obj) {
+		var result="hasOwnProperty" in obj && obj.hasOwnProperty(propertyName);
+		return result;
+		/*
+			或者使用 In
+			if ("count" in obj){
+				//do your things
+			}
+		*/
+	}
+
+	var testObj={count:0,releated:null};
+	var t3=checkPropertyIn("1count",testObj);
+	console.log("Test property in obj...");
+	console.log(t3);
 
 
 	//js练习题
