@@ -100,6 +100,49 @@ var anotherPerson2=createObject(person1);
 anotherPerson2.name="Lucy";
 anotherPerson2.friends.push("Cbs");
 
+//5 寄生式继承
+/*
+    使用寄生式继承来为对象添加函数，会由于不能做到函数服用而降低效率，这一点与构造函数模式类似
+* */
+function createAnother(original) {
+    var clone=createObject(original);//通过调用函数创建一个新对象
+    clone.sayHi=function () {//以某种方式来增强这个对象
+        alert("hi");
+    };
+    return clone;
+}
+
+var parasiticPerson={name:"韩信",friends:["刘邦","萧何","樊哙"]};
+var cloneAnotherPerson=createAnother(parasiticPerson);
+
+//6 寄生组合式继承
+function inheritPrototype(subType,superType) {
+    var prototype=createObject(superType.prototype);//创建对象
+    prototype.constructor=subType;//增强对象
+    subType.prototype=prototype;//指定对象
+}//以上inheritPrototype()实现了寄生组合式继承的最简单形式
+
+function CombinationSuperType(name) {
+    this.name=name;
+    this.colors=["red","black","blue"];
+}
+
+CombinationSuperType.prototype.sayName=function () {
+    alert(this.name);
+}
+
+function CombinationSubType(name,age) {
+    CombinationSuperType.call(this,name);
+    this.age=age;
+}
+inheritPrototype(CombinationSubType,CombinationSuperType);//调用组合式继承函数
+
+CombinationSubType.prototype.sayAge=function () {
+    alert(this.age);
+}
+
+var combinationSubType=new CombinationSubType("李世民",666);
+
 
 
 
