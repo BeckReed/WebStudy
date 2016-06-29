@@ -3,9 +3,12 @@
  */
 
 (function (){
+    // var t='aaaaaaaaa';
     function showMessage(){
-        alert('阻挡页面加载线程');
+        //alert('阻挡页面加载线程');
     }
 
     showMessage();
+    /*window.T=t;
+    return t;*/
 })();
