@@ -59,6 +59,8 @@ require(["../js/test1","../js/test2"],function(){
 });*/
 
 
+
+
 /* main.js
 require(['moduleA', 'moduleB', 'moduleC'], function (moduleA, moduleB, moduleC){
     // some code here
@@ -87,9 +89,15 @@ require(['moduleA', 'moduleB', 'moduleC'], function (moduleA, moduleB, moduleC){
  　　　　}
  　　});
 
- equire.config()接受一个配置对象，这个对象除了有前面说过的paths属性之外，还有一个shim属性，
+ require.config()接受一个配置对象，这个对象除了有前面说过的paths属性之外，还有一个shim属性，
  专门用来配置不兼容的模块。具体来说，每个模块要定义（1）exports值（输出的变量名），
   表明这个模块外部调用时的名称；（2）deps数组，表明该模块的依赖性。
 * */
+
+
+
+
+
+
 
 
