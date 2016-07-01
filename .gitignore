@@ -7,4 +7,5 @@
 .idea/encodings.xml
 .idea/misc.xml
 /build
+/node_modules
 
