@@ -1,11 +1,4 @@
-.idea/WebStudy.iml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
-.idea/.name
-.idea/dictionaries/Beck.xml
-.idea/encodings.xml
-.idea/misc.xml
-/build
-/node_modules
+.idea/*
+build/*
+node_modules/*
 
