@@ -15,9 +15,6 @@
   ],
   "author": "Beck",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BeckReed/WebStudy/issues"
-  },
   "homepage": "https://github.com/BeckReed/WebStudy#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
