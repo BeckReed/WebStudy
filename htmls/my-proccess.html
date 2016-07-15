@@ -161,7 +161,7 @@
 	$(function($){
 		var baseUrl = 'http://28f.bujidele.com:34181/';
 		var userId="4FB1959B80C4DA56BFB9856FD0A6E997";//luoguofeng
-		var pageSize=10;
+		var pageSize=7;
 		var itemIndex = 0;
 		var tab1LoadEnd = false;
 		var tab2LoadEnd = false;
@@ -287,8 +287,13 @@
 					}
 					if(direction<=0){
 						console.log('aaaa')
-						$('.lists:first').children('ul').children().remove();
+						me.unlock();
+						me.noData(false);
+						$(".dropload-up").removeAttr("style");
+						$('.lists:first').children().children().remove();
+						//me.$domDown.html('');
 					}
+					console.log(htmlTpl)
 					$('.lists').eq(0).append(htmlTpl);
 					// 每次数据加载完，必须重置
 					me.resetload();
