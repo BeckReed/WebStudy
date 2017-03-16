@@ -23,6 +23,16 @@ console.log('unshift返回的count是： '+arrayCount);
 var shiftItem=colorArrays.shift();
 console.log('shift返回的第一项是： '+shiftItem);
 
+//检验是否数组兼容性写法
+function isArray(value){
+    if(typeof Array.isArray==="function"){
+        return Array.isArray(value);
+    }else{
+        //兼容旧版本浏览器
+        return Object.prototype.toString.call(value)==="[object Array]";
+    }
+}
+
 /*
   数组toString方法会返回由数组中每个值的字符串形式拼接而成的一个以逗号分隔的字符串
 
